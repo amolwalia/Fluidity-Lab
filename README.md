@@ -1,9 +1,9 @@
-# 💅 Fluidity Lab
+#  Fluidity Lab
 
 A simple front-end web application for customizing and decorating virtual nails. Users can select base paint colors, 
 apply French tips, drag and drop cute decorations, and finally download or share their final nail design.
 
-## 🚀 Features
+## Features
 
 - Base color and French tip selection
 - Drag-and-drop nail decorations
@@ -11,7 +11,7 @@ apply French tips, drag and drop cute decorations, and finally download or share
 - Download design as an image
 - Responsive, playful UI
 
-## 📁 Project Structure
+##  Project Structure
 
 Nails-Comp/
 ├── index.html              # Landing page
@@ -30,7 +30,7 @@ Nails-Comp/
 ├── media/                  # SVGs, logos, background patterns
 └── README.md
 
-## 🛠️ How to Run Locally
+##  How to Run Locally
 
 To view and interact with the app on your local machine:
 
@@ -52,7 +52,7 @@ Steps:
 - Decorate your nails
 - Save and download your masterpiece!
 
-## 📸 Example Screenshots
+## Example Screenshots
 <img width="1512" alt="homescreen" src="https://github.com/user-attachments/assets/d2be2e06-5ac6-4ae0-b9a1-ad97bda8c348" />
 <img width="1512" alt="decorations" src="https://github.com/user-attachments/assets/28b04878-b108-4806-b75e-67d1ac7d69ee" />
 

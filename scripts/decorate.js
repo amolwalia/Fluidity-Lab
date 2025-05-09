@@ -135,18 +135,19 @@ function resetDecor() {
 function saveAndGoToResults() {
   const nails = document.querySelectorAll(".nail");
   const designData = Array.from(nails).map((nail) => {
-    const styles = getComputedStyle(nail);
-    const bg = styles.backgroundColor;
-    const decorations = Array.from(nail.children).map((decor) => ({
-      content: decor.outerHTML,
-      left: decor.style.left,
-      top: decor.style.top,
-      transform: decor.style.transform,
-    }));
+    const decorations = Array.from(nail.querySelectorAll(".decor-item")).map(
+      (decor) => ({
+        left: decor.style.left,
+        top: decor.style.top,
+        transform: decor.style.transform,
+        content: decor.innerHTML,
+      })
+    );
+
     return {
-      background: bg,
+      background: nail.style.background,
+      hasTip: !!nail.querySelector(".french-tip-overlay"),
       decorations,
-      hasTip: nail.querySelector(".french-tip-overlay") !== null,
     };
   });
   localStorage.setItem("finalNailDesign", JSON.stringify(designData));
