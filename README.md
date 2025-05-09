@@ -1,6 +1,7 @@
 # 💅 Fluidity Lab
 
-A simple front-end web application for customizing and decorating virtual nails. Users can select base paint colors, apply French tips, drag and drop cute decorations, and finally download or share their final nail design.
+A simple front-end web application for customizing and decorating virtual nails. Users can select base paint colors, 
+apply French tips, drag and drop cute decorations, and finally download or share their final nail design.
 
 ## 🚀 Features
 
