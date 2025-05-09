@@ -6,6 +6,7 @@ if (saved && Array.isArray(saved)) {
     const nail = document.createElement("div");
     nail.classList.add("nail");
     nail.style.background = nailData.background;
+
     if (nailData.hasTip) {
       const tip = document.createElement("div");
       tip.className = "french-tip-overlay";
@@ -13,8 +14,6 @@ if (saved && Array.isArray(saved)) {
     }
 
     nailData.decorations.forEach((decor) => {
-      const deco = document.createElement("div");
-      deco.classList.add("decor-item");
       const wrapper = document.createElement("div");
       wrapper.className = "decor-item";
       wrapper.style.left = decor.left;
@@ -22,12 +21,8 @@ if (saved && Array.isArray(saved)) {
       wrapper.style.transform = decor.transform;
       wrapper.style.transformOrigin = "center center";
       wrapper.innerHTML = decor.content;
+
       nail.appendChild(wrapper);
-      deco.style.left = decor.left;
-      deco.style.top = decor.top;
-      deco.style.transform = decor.transform;
-      deco.style.transformOrigin = "center center";
-      nail.appendChild(deco);
     });
 
     container.appendChild(nail);
