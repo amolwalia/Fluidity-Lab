@@ -53,13 +53,26 @@ header {
 .decor-panel {
   flex: 1;
 }
-.decor-item {
+/* .decor-item {
   display: inline;
   font-size: 2rem;
   margin: 10px;
   cursor: grab;
   user-select: none;
+} */
+
+.decor-item {
+  display: inline-block; /* Changed from inline to inline-block */
+  font-size: 2rem;
+  margin: 10px;
+  cursor: grab;
+  user-select: none;
+  vertical-align: top; /* Align items to the top */
+  text-align: center; /* Center the SVG inside */
+  width: 60px; /* Fixed width for consistent spacing */
+  cursor: grab;
 }
+
 .controls {
   display: flex;
   justify-content: center;
