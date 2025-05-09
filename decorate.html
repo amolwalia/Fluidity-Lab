@@ -1,0 +1,80 @@
+<!-- Full working page with Save Results persisting nail designs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decorate Your Nails</title>
+    <link rel="stylesheet" href="./styles/decorate.css" />
+  </head>
+  <body>
+    <header>Decorate Your Nails!</header>
+    <div class="container">
+      <div class="nail-area">
+        <p>Drag and Drop your Decor</p>
+        <div class="nails">
+          <div
+            class="nail"
+            ondragover="allowDrop(event)"
+            ondrop="drop(event)"
+          ></div>
+          <div
+            class="nail"
+            ondragover="allowDrop(event)"
+            ondrop="drop(event)"
+          ></div>
+          <div
+            class="nail"
+            ondragover="allowDrop(event)"
+            ondrop="drop(event)"
+          ></div>
+          <div
+            class="nail"
+            ondragover="allowDrop(event)"
+            ondrop="drop(event)"
+          ></div>
+          <div
+            class="nail"
+            ondragover="allowDrop(event)"
+            ondrop="drop(event)"
+          ></div>
+        </div>
+        <div class="controls">
+          <button class="btn btn-blue" onclick="rotateSelected()">
+            Rotate
+          </button>
+          <button class="btn btn-blue" onclick="undoDecor()">Undo</button>
+          <button class="btn btn-blue" onclick="resizeSelected(0.1)">+</button>
+          <button class="btn btn-blue" onclick="resizeSelected(-0.1)">-</button>
+        </div>
+      </div>
+      <div class="decor-panel">
+        <h3>Design</h3>
+        <div class="decor-item" draggable="true" ondragstart="drag(event)">
+          ⭐
+        </div>
+        <div class="decor-item" draggable="true" ondragstart="drag(event)">
+          🎀
+        </div>
+        <div class="decor-item" draggable="true" ondragstart="drag(event)">
+          💖
+        </div>
+        <div class="decor-item" draggable="true" ondragstart="drag(event)">
+          💎
+        </div>
+        <br />
+        <button class="btn btn-blue" onclick="resetDecor()">Reset</button>
+      </div>
+    </div>
+    <div class="btn-row">
+      <button class="btn btn-pink" onclick="location.href='base.html'">
+        Back
+      </button>
+      <button class="btn btn-green" onclick="saveAndGoToResults()">
+        Save Results
+      </button>
+    </div>
+
+    <script src="./scripts/decorate.js"></script>
+  </body>
+</html>
