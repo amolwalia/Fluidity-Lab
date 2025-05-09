@@ -35,7 +35,7 @@ Nails-Comp/
 To view and interact with the app on your local machine:
 
 ### 1. Clone the Repo
-git clone https://github.com/your-username/Nails-Comp.git  
+git clone https://github.com/amolwalia/Fluidity-Lab.git  
 cd Nails-Comp
 
 ### 2. Start a Local Server (Live Server in VS Code)
