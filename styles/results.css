@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fef4f7;
+  text-align: center;
+}
+header {
+  padding: 20px;
+  background-color: #e9d1d1;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+#nailScreenshot {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.nail-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.nail {
+  width: 50px;
+  height: 100px;
+  border: 2px solid #000;
+  border-radius: 25px 25px 40px 40px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+}
+.decor-item {
+  position: absolute;
+  font-size: 2rem;
+  user-select: none;
+  pointer-events: none;
+}
+.btn-download {
+  margin: 30px auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #b2d6f0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 3px #888;
+}
