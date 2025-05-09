@@ -40,6 +40,8 @@ header {
   font-size: 2rem;
   user-select: none;
   pointer-events: none;
+  margin: 10px;
+  width: 60px;
 }
 .btn-download {
   margin: 30px auto;
