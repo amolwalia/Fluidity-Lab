@@ -1,3 +1,20 @@
+(function () {
+  const nails = document.querySelectorAll(".nail");
+  const designData = JSON.parse(localStorage.getItem("nailDesignData"));
+
+  if (designData && designData.length === nails.length) {
+    designData.forEach((data, index) => {
+      nails[index].style.background = data.background;
+
+      if (data.hasTip) {
+        const tip = document.createElement("div");
+        tip.className = "french-tip-overlay";
+        nails[index].appendChild(tip);
+      }
+    });
+  }
+})();
+
 let draggedItem = null;
 let selectedDecor = null;
 let history = [];
@@ -121,24 +138,44 @@ function saveAndGoToResults() {
     const styles = getComputedStyle(nail);
     const bg = styles.backgroundColor;
     const decorations = Array.from(nail.children).map((decor) => ({
-      content: decor.textContent,
+      content: decor.outerHTML,
       left: decor.style.left,
       top: decor.style.top,
       transform: decor.style.transform,
     }));
-    return { background: bg, decorations };
+    return {
+      background: bg,
+      decorations,
+      hasTip: nail.querySelector(".french-tip-overlay") !== null,
+    };
   });
   localStorage.setItem("finalNailDesign", JSON.stringify(designData));
   location.href = "results.html";
 }
 
 window.onload = function () {
-  const savedColors = JSON.parse(localStorage.getItem("nailColors"));
+  const designData = JSON.parse(localStorage.getItem("nailDesignData"));
   const nails = document.querySelectorAll(".nail");
-  if (savedColors && Array.isArray(savedColors)) {
+  if (designData && Array.isArray(designData)) {
     nails.forEach((nail, index) => {
-      if (savedColors[index]) {
-        nail.style.background = savedColors[index];
+      const nailData = designData[index];
+      if (nailData) {
+        nail.style.background = nailData.background;
+        if (nailData.hasTip) {
+          const tip = document.createElement("div");
+          tip.className = "french-tip-overlay";
+          tip.style.position = "absolute";
+          tip.style.top = "0";
+          tip.style.left = "0";
+          tip.style.width = "100%";
+          tip.style.height = "100%";
+          tip.style.pointerEvents = "none";
+          tip.style.zIndex = "2";
+          tip.style.background =
+            "url('./Asset 1.svg') top center / 100% auto no-repeat";
+          tip.style.opacity = "1";
+          nail.appendChild(tip);
+        }
       }
     });
   }

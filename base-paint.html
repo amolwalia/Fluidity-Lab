@@ -4,11 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Choose Your Base</title>
-   <link rel="stylesheet" href="./styles/basepaints.css" />
+    <link rel="stylesheet" href="./styles/basepaints.css" />
   </head>
   <body>
     <header>Choose Your Base</header>
-
     <div class="container">
       <div class="nail-area">
         <p style="text-align: center">Select a Nail and Customize!</p>
@@ -20,7 +19,6 @@
           <div class="nail" onclick="selectNail(this)"></div>
         </div>
       </div>
-
       <div class="palette">
         <h3>Base</h3>
         <strong>Solid Colour ˚୨୧⋆｡˚</strong>
@@ -28,77 +26,125 @@
           <div
             class="color"
             style="background: white"
-            onclick="setColor('white')"
+            onclick="setColor('white', false)"
           ></div>
           <div
             class="color"
-            style="background: pink"
-            onclick="setColor('pink')"
+            style="background: #ffc8f4"
+            onclick="setColor('#ffc8f4', false)"
           ></div>
           <div
             class="color"
-            style="background: hotpink"
-            onclick="setColor('hotpink')"
+            style="background: #ff77c0"
+            onclick="setColor('#ff77c0', false)"
           ></div>
           <div
             class="color"
-            style="background: yellow"
-            onclick="setColor('yellow')"
+            style="background: #fefc85"
+            onclick="setColor('#fefc85', false)"
           ></div>
           <div
             class="color"
-            style="background: lightgreen"
-            onclick="setColor('lightgreen')"
+            style="background: #c2f09f"
+            onclick="setColor('#c2f09f', false)"
           ></div>
           <div
             class="color"
-            style="background: peachpuff"
-            onclick="setColor('peachpuff')"
+            style="background: #c2efff"
+            onclick="setColor('#c2efff', false)"
+          ></div>
+        </div>
+        <div class="colors">
+          <div
+            class="color"
+            style="background: #aebeff"
+            onclick="setColor('#AEBEFF', false)"
+          ></div>
+          <div
+            class="color"
+            style="background: #debaff"
+            onclick="setColor('#DEBAFF', false)"
+          ></div>
+          <div
+            class="color"
+            style="background: #bb66ec"
+            onclick="setColor('#BB66EC', false)"
+          ></div>
+          <div
+            class="color"
+            style="background: #eecfdd"
+            onclick="setColor('#EECFDD', false)"
+          ></div>
+          <div
+            class="color"
+            style="background: #f5e4d0"
+            onclick="setColor('#F5E4D0', false)"
           ></div>
         </div>
         <strong>French Tips ˚୨୧⋆｡˚</strong>
         <div class="colors">
           <div
             class="color"
-            style="background: white"
-            onclick="setColor('white')"
+            style="background: #ffc8f4"
+            onclick="setColor('#ffc8f4', true)"
           ></div>
           <div
             class="color"
-            style="background: pink"
-            onclick="setColor('pink')"
+            style="background: #ff77c0"
+            onclick="setColor('#ff77c0', true)"
           ></div>
           <div
             class="color"
-            style="background: hotpink"
-            onclick="setColor('hotpink')"
+            style="background: #fefc85"
+            onclick="setColor('#fefc85', true)"
           ></div>
           <div
             class="color"
-            style="background: yellow"
-            onclick="setColor('yellow')"
+            style="background: #c2f09f"
+            onclick="setColor('#c2f09f', true)"
           ></div>
           <div
             class="color"
-            style="background: lightgreen"
-            onclick="setColor('lightgreen')"
+            style="background: #c2efff"
+            onclick="setColor('#c2efff', true)"
           ></div>
           <div
             class="color"
-            style="background: peachpuff"
-            onclick="setColor('peachpuff')"
+            style="background: #aebeff"
+            onclick="setColor('#AEBEFF', true)"
+          ></div>
+        </div>
+        <div class="colors">
+          <div
+            class="color"
+            style="background: #debaff"
+            onclick="setColor('#DEBAFF', true)"
+          ></div>
+          <div
+            class="color"
+            style="background: #bb66ec"
+            onclick="setColor('#BB66EC', true)"
+          ></div>
+          <div
+            class="color"
+            style="background: #eecfdd"
+            onclick="setColor('#EECFDD', true)"
+          ></div>
+          <div
+            class="color"
+            style="background: #f5e4d0"
+            onclick="setColor('#F5E4D0', true)"
           ></div>
         </div>
         <br />
         <button class="btn btn-brown" onclick="resetColors()">Reset</button>
       </div>
     </div>
-
     <div class="btn-row">
       <button class="btn btn-pink" onclick="location.href='index.html'">
         Back
       </button>
-      <button class="btn btn-green" onclick="saveNailColorsAndGoNext()">Next</button>
+      <button class="btn btn-green" onclick="saveNailColorsAndGoNext()">
         Next
       </button>
     </div>

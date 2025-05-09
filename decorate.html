@@ -43,38 +43,143 @@
           <button class="btn btn-blue" onclick="rotateSelected()">
             Rotate
           </button>
-          <button class="btn btn-blue" onclick="undoDecor()">Undo</button>
           <button class="btn btn-blue" onclick="resizeSelected(0.1)">+</button>
           <button class="btn btn-blue" onclick="resizeSelected(-0.1)">-</button>
+          <button class="btn btn-blue" onclick="undoDecor()">Undo</button>
         </div>
       </div>
       <div class="decor-panel">
         <h3>Design</h3>
         <div class="decor-item" draggable="true" ondragstart="drag(event)">
-          ⭐
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="44"
+            height="41"
+            viewBox="0 0 44 41"
+            fill="none"
+          >
+            <path
+              d="M19.1724 2.97731C20.1165 0.313675 23.8835 0.313681 24.8276 2.97732L28.0273 12.0043C28.4518 13.2018 29.5845 14.002 30.8549 14.002H40.6151C43.584 14.002 44.7491 17.8532 42.278 19.499L34.8438 24.4501C33.6999 25.212 33.22 26.6538 33.6791 27.9493L36.6223 36.2526C37.5859 38.9712 34.5324 41.3506 32.1317 39.7518L23.6629 34.1116C22.6558 33.4408 21.3442 33.4408 20.3371 34.1116L11.8683 39.7518C9.46758 41.3506 6.41405 38.9712 7.3777 36.2526L10.3209 27.9493C10.7801 26.6538 10.3001 25.212 9.15618 24.4501L1.72198 19.499C-0.749094 17.8532 0.415974 14.002 3.38492 14.002H13.1451C14.4155 14.002 15.5482 13.2018 15.9727 12.0043L19.1724 2.97731Z"
+              fill="#DEBAFF"
+            />
+          </svg>
+        </div>
+        <div class="decor-item" draggable="true" ondragstart="drag(event)">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="44"
+            height="41"
+            viewBox="0 0 44 41"
+            fill="none"
+          >
+            <path
+              d="M19.1724 2.97731C20.1165 0.313675 23.8835 0.313681 24.8276 2.97732L28.0273 12.0043C28.4518 13.2018 29.5845 14.002 30.8549 14.002H40.6151C43.584 14.002 44.7491 17.8532 42.278 19.499L34.8438 24.4501C33.6999 25.212 33.22 26.6538 33.6791 27.9493L36.6223 36.2526C37.5859 38.9712 34.5324 41.3506 32.1317 39.7518L23.6629 34.1116C22.6558 33.4408 21.3442 33.4408 20.3371 34.1116L11.8683 39.7518C9.46758 41.3506 6.41405 38.9712 7.3777 36.2526L10.3209 27.9493C10.7801 26.6538 10.3001 25.212 9.15618 24.4501L1.72198 19.499C-0.749094 17.8532 0.415974 14.002 3.38492 14.002H13.1451C14.4155 14.002 15.5482 13.2018 15.9727 12.0043L19.1724 2.97731Z"
+              fill="#FFC8F4"
+            />
+          </svg>
+        </div>
+        <div class="decor-item" draggable="true" ondragstart="drag(event)">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="44"
+            height="41"
+            viewBox="0 0 44 41"
+            fill="none"
+          >
+            <path
+              d="M19.1724 2.97731C20.1165 0.313675 23.8835 0.313681 24.8276 2.97732L28.0273 12.0043C28.4518 13.2018 29.5845 14.002 30.8549 14.002H40.6151C43.584 14.002 44.7491 17.8532 42.278 19.499L34.8438 24.4501C33.6999 25.212 33.22 26.6538 33.6791 27.9493L36.6223 36.2526C37.5859 38.9712 34.5324 41.3506 32.1317 39.7518L23.6629 34.1116C22.6558 33.4408 21.3442 33.4408 20.3371 34.1116L11.8683 39.7518C9.46758 41.3506 6.41405 38.9712 7.3777 36.2526L10.3209 27.9493C10.7801 26.6538 10.3001 25.212 9.15618 24.4501L1.72198 19.499C-0.749094 17.8532 0.415974 14.002 3.38492 14.002H13.1451C14.4155 14.002 15.5482 13.2018 15.9727 12.0043L19.1724 2.97731Z"
+              fill="#FF77C0"
+            />
+          </svg>
+        </div>
+        <div class="decor-item" draggable="true" ondragstart="drag(event)">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="45"
+            height="41"
+            viewBox="0 0 45 41"
+            fill="none"
+          >
+            <path
+              d="M19.6777 2.83186C20.6304 0.187956 24.3696 0.187961 25.3223 2.83187L28.6331 12.0191C29.0619 13.2089 30.1907 14.002 31.4554 14.002H41.4529C44.4336 14.002 45.5902 17.8782 43.0968 19.5115L35.5613 24.4479C34.3995 25.2089 33.912 26.6679 34.3829 27.9745L37.3837 36.3018C38.3604 39.012 35.3273 41.4069 32.9175 39.8283L24.1439 34.081C23.1455 33.4269 21.8545 33.4269 20.8561 34.081L12.0825 39.8283C9.67274 41.4069 6.63961 39.012 7.61626 36.3018L10.6171 27.9745C11.088 26.6679 10.6005 25.2089 9.43873 24.4479L1.90319 19.5115C-0.590192 17.8782 0.566361 14.002 3.54711 14.002H13.5446C14.8093 14.002 15.9381 13.2089 16.3669 12.0191L19.6777 2.83186Z"
+              fill="#FEFC85"
+            />
+          </svg>
+        </div>
+        <div class="decor-item" draggable="true" ondragstart="drag(event)">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="44"
+            height="41"
+            viewBox="0 0 44 41"
+            fill="none"
+          >
+            <path
+              d="M19.1724 2.97731C20.1165 0.313675 23.8835 0.313681 24.8276 2.97732L28.0273 12.0043C28.4518 13.2018 29.5845 14.002 30.8549 14.002H40.6151C43.584 14.002 44.7491 17.8532 42.278 19.499L34.8438 24.4501C33.6999 25.212 33.22 26.6538 33.6791 27.9493L36.6223 36.2526C37.5859 38.9712 34.5324 41.3506 32.1317 39.7518L23.6629 34.1116C22.6558 33.4408 21.3442 33.4408 20.3371 34.1116L11.8683 39.7518C9.46758 41.3506 6.41405 38.9712 7.3777 36.2526L10.3209 27.9493C10.7801 26.6538 10.3001 25.212 9.15618 24.4501L1.72198 19.499C-0.749094 17.8532 0.415974 14.002 3.38492 14.002H13.1451C14.4155 14.002 15.5482 13.2018 15.9727 12.0043L19.1724 2.97731Z"
+              fill="#BB66EC"
+            />
+          </svg>
+        </div>
+        <br />
+        <div class="decor-item" draggable="true" ondragstart="drag(event)">
+          💜
+        </div>
+        <div class="decor-item" draggable="true" ondragstart="drag(event)">
+          🧡
+        </div>
+        <div class="decor-item" draggable="true" ondragstart="drag(event)">
+          ❤️
+        </div>
+        <div class="decor-item" draggable="true" ondragstart="drag(event)">
+          🩷
+        </div>
+        <div class="decor-item" draggable="true" ondragstart="drag(event)">
+          🧡
+        </div>
+        <br />
+        <div class="decor-item" draggable="true" ondragstart="drag(event)">
+          💎
+        </div>
+        <div class="decor-item" draggable="true" ondragstart="drag(event)">
+          💎
+        </div>
+        <div class="decor-item" draggable="true" ondragstart="drag(event)">
+          💎
+        </div>
+        <div class="decor-item" draggable="true" ondragstart="drag(event)">
+          💎
+        </div>
+        <div class="decor-item" draggable="true" ondragstart="drag(event)">
+          💎
+        </div>
+        <br />
+        <div class="decor-item" draggable="true" ondragstart="drag(event)">
+          🎀
         </div>
         <div class="decor-item" draggable="true" ondragstart="drag(event)">
           🎀
         </div>
         <div class="decor-item" draggable="true" ondragstart="drag(event)">
-          💖
+          🎀
         </div>
         <div class="decor-item" draggable="true" ondragstart="drag(event)">
-          💎
+          🎀
+        </div>
+        <div class="decor-item" draggable="true" ondragstart="drag(event)">
+          🎀
         </div>
         <br />
         <button class="btn btn-blue" onclick="resetDecor()">Reset</button>
       </div>
     </div>
     <div class="btn-row">
-      <button class="btn btn-pink" onclick="location.href='base.html'">
+      <button class="btn btn-pink" onclick="location.href='base-paint.html'">
         Back
       </button>
       <button class="btn btn-green" onclick="saveAndGoToResults()">
         Save Results
       </button>
     </div>
-
     <script src="./scripts/decorate.js"></script>
   </body>
 </html>

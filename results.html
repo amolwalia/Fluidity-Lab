@@ -11,27 +11,18 @@
     <div id="nailScreenshot">
       <div class="nail-container" id="resultsContainer"></div>
     </div>
-    <div style="width: 100%; display: flex; justify-content: center">
+    <div style="width: 100%; display: flex; justify-content: center; gap: 20px">
+      <button class="btn-back" onclick="location.href='decorate.html'">
+        Back
+      </button>
       <button class="btn-download" onclick="downloadImage()">
         Download Design
       </button>
-    </div>
-
-    <div
-      style="
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-      "
-    >
       <button class="btn-download" onclick="shareDesign()">Share Design</button>
       <button class="btn-download" onclick="location.href='index.html'">
         Back to Start
       </button>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="./scripts/results.js"></script>
   </body>

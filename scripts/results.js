@@ -6,11 +6,23 @@ if (saved && Array.isArray(saved)) {
     const nail = document.createElement("div");
     nail.classList.add("nail");
     nail.style.background = nailData.background;
+    if (nailData.hasTip) {
+      const tip = document.createElement("div");
+      tip.className = "french-tip-overlay";
+      nail.appendChild(tip);
+    }
 
     nailData.decorations.forEach((decor) => {
       const deco = document.createElement("div");
       deco.classList.add("decor-item");
-      deco.textContent = decor.content;
+      const wrapper = document.createElement("div");
+      wrapper.className = "decor-item";
+      wrapper.style.left = decor.left;
+      wrapper.style.top = decor.top;
+      wrapper.style.transform = decor.transform;
+      wrapper.style.transformOrigin = "center center";
+      wrapper.innerHTML = decor.content;
+      nail.appendChild(wrapper);
       deco.style.left = decor.left;
       deco.style.top = decor.top;
       deco.style.transform = decor.transform;
@@ -35,8 +47,7 @@ function downloadImage() {
 }
 
 function shareDesign() {
-  const shareText = `Check out my custom nail design! 💅
-Create your own here: https://nailsbykla.com`;
+  const shareText = `Check out my custom nail design! 💅\nCreate your own here: https://your-nail-app-url.com`;
   if (navigator.share) {
     navigator
       .share({
