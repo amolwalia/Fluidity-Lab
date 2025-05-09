@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: "Quicksand", sans-serif;
-  background: url("/media/pink_plaid.png");
+  background: url("../media/pink_plaid.png");
   background-size: cover;
   background-blend-mode: multiply;
   background-color: #fbf5e9;
