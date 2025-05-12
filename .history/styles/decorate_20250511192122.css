@@ -35,8 +35,6 @@ header {
   flex: 1;
   margin-right: 40px;
   text-align: center;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
-
 }
 .nails {
   display: flex;
@@ -109,7 +107,7 @@ header {
 }
 .btn-green {
   background-color: #b7d8b2;
-  padding: 15px 45px;
+  padding: 15px 60px;
 }
 .btn-green:hover {
   transform: scale(1.05);
@@ -147,13 +145,4 @@ header {
   background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2251%22%20height%3D%2222%22%20viewBox%3D%220%200%2051%2022%22%20fill%3D%22none%22%3E%3Cg%20clip-path%3D%22url(%23clip0_175_14)%22%3E%3Cpath%20d%3D%22M6.44475e-05%2021.6C6.44475e-05%2021.6%20-1.89993%202.3%2012.5001%200H38.3001C38.3001%200%2050.8001%201.7%2050.4001%2021.6C50.4001%2021.6%2044.0001%204.4%2025.2001%205C6.40007%205.6%206.44475e-05%2021.6%206.44475e-05%2021.6Z%22%20fill%3D%22white%22%2F%3E%3C%2Fg%3E%3Cdefs%3E%3CclipPath%20id%3D%22clip0_175_14%22%3E%3Crect%20width%3D%2250.4%22%20height%3D%2221.6%22%20fill%3D%22white%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3C%2Fsvg%3E")
     top center / 100% auto no-repeat;
   opacity: 1;
-}
-
-.btn-blue {
-  display: block;
-  margin: 20px auto;
-}
-
-h3 {
-  text-align: centerb;
 }

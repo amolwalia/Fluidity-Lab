@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  background: url("../media/pink_plaid.png");
+  background-size: cover;
+  background-color: #fbf5e9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
+
+header {
+  width: 100%;
+  padding: 20px;
+  background-color: #e9d1d1;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: serif;
+  color: #2b2b2b;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.nail-area,
+.palette {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.nail-area {
+  flex: 1;
+  margin-right: 40px;
+  position: relative;
+  border: 2px solid #f2d4da;
+}
+
+.palette {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.nails {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 10px 0;
+}
+
+.nail {
+  width: 60px;
+  height: 120px;
+  border: 2px solid #000;
+  border-radius: 30px 30px 50px 50px;
+  background: #fff;
+  position: relative;
+}
+
+.btn-row {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-pink {
+  background-color: #f9c0d7;
+}
+
+.btn-green {
+  background-color: #cdebd6;
+}
+
+.btn-brown {
+  background-color: #e7bcbc;
+}
+
+.controls {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.control-group span {
+  font-size: 0.9rem;
+}
+
+.reset-save {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  margin-top: 20px;
+}
+
+.reset-save button {
+  font-size: 1rem;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.dropdown {
+  margin-top: 15px;
+}
+
+.decor-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.decor-icons div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+}
+
+.decor-icons span {
+  font-size: 1.3rem;
+}

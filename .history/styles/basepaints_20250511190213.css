@@ -29,13 +29,12 @@ header {
   background: #fff;
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 
 }
 .nail-area {
   flex: 1;
   margin-right: 40px;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 4px 8px 8px  rgba(0, 0, 0, 0.1);
 }
 .palette {
   flex: 1;
@@ -54,28 +53,6 @@ header {
   position: relative;
   overflow: hidden;
 }
-
-h3 {
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 30px;
-
-}
-strong.custom {
-  display: inline-block;
-  margin-bottom: 30px;
-}
-
-.btn-brown {
-    display: block;
-    margin: 20px auto;
-}
-
-
-.french {
-  margin-bottom: 10px
-}
-
 .french-tip-overlay {
   position: absolute;
   top: 0;
@@ -119,7 +96,7 @@ strong.custom {
   margin-top: 30px;
 }
 .btn {
-  padding: 12px 30px;
+  padding: 12px 24px;
   font-size: 1.1rem;
   background-color: #b7d8b2;
   border: none;
@@ -134,11 +111,9 @@ strong.custom {
 }
 .btn-pink {
   background-color: #f9c0d7;
-  padding: 15px 60px;
 }
 .btn-green {
   background-color: #b7d8b2;
-  padding: 15px 60px;
 }
 .btn-brown {
   background-color: #d6a5a5;
